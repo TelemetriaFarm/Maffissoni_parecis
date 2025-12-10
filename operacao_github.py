@@ -16,17 +16,17 @@ GROWER_ID_FIXO = 1690516
 # Dias para analisar para trás (ex: 5 dias)
 DIAS_ANALISE = 8 
 
-# Dados da Estação (Atualizados conforme imagem)
+# Dados da Estação (CORRIGIDO: Agora aponta para o GROWER_ID_FIXO)
 ESTACOES_FIXAS = [
     {
-        'id_grower': 1139788, 
+        'id_grower': GROWER_ID_FIXO,  # Usando a variável para garantir que o filtro funcione
         'name': 'Guará', 
         'id_estacao': 55926, 
         'latitude': -14.1438, 
         'longitude': -59.2024
     },
     {
-        'id_grower': 1139788, 
+        'id_grower': GROWER_ID_FIXO,  # Usando a variável para garantir que o filtro funcione
         'name': 'Guará 2', 
         'id_estacao': 65652, 
         'latitude': -14.1580, 
