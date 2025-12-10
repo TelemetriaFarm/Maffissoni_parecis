@@ -12,15 +12,27 @@ import os
 import sys
 
 # --- CONFIGURAÇÕES FIXAS (PARA O GITHUB) ---
-GROWER_ID_FIXO = 1139788
+GROWER_ID_FIXO = 1690516
 # Dias para analisar para trás (ex: 5 dias)
-DIAS_ANALISE = 7 
+DIAS_ANALISE = 8 
 
-# Dados da Estação (Hardcoded para não precisar subir Excel)
+# Dados da Estação (Atualizados conforme imagem)
 ESTACOES_FIXAS = [
-    {'id_grower': 1139788, 'name': 'Fazenda Guará', 'id_estacao': 52944, 'latitude': -21.6533, 'longitude': -55.4610}
+    {
+        'id_grower': 1139788, 
+        'name': 'Guará', 
+        'id_estacao': 55926, 
+        'latitude': -14.1438, 
+        'longitude': -59.2024
+    },
+    {
+        'id_grower': 1139788, 
+        'name': 'Guará 2', 
+        'id_estacao': 65652, 
+        'latitude': -14.1580, 
+        'longitude': -59.1663
+    }
 ]
-
 # --- IMPORTAÇÃO DA AUTENTICAÇÃO ---
 try:
     from farm_auth import get_authenticated_session
